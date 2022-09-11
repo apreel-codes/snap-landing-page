@@ -1,0 +1,1393 @@
+body{
+    background-color: hsl(0, 0%, 98%);
+    margin: 0px;
+    /*display: flex;*/
+    /*justify-content: center;*/
+    align-items: center;
+    min-height: 100vh;
+    line-height: 1;
+    color: hsl(0, 0%, 8%);
+    font-weight:lighter;
+    font-family: Epilogue;
+    font-size: 0.9rem;
+    position: relative;
+    max-width: 100%;
+    padding: 1rem 0 1rem 0;
+}
+
+@media(min-width: 320px) and (max-width: 480px){
+    
+    #navs{
+        display: none;
+    }
+
+    #right{
+        display: none;
+    }
+
+    #top-nav{
+        display: flex;
+        justify-content: space-between;
+        margin: 20px 20px 0 20px;
+    }
+
+    .logo{
+        height: 20px;
+        width: 60px;
+    }
+
+    .show-mobile{
+        height: 18px;
+        width: 30px;
+    }
+
+    #container{
+        display: flex;
+        flex-direction:column;
+        text-align: center;
+    }
+
+    #hero-image{
+        order: -1;
+        margin-top: 30px;
+        margin-bottom: 5px;
+    }
+
+    .mobile-hero{
+        width: 80%;
+    }
+
+    .desktop-hero{
+        display: none;
+    }
+
+
+    .company{
+        display: none;
+    }
+
+    .features{
+        display: none;
+    }
+    
+    #learn{
+        padding: 10px 20px;
+        font-size: 1.2rem;
+        border-radius: 7px;
+        border: 1px solid hsl(0, 0%, 8%);
+        background-color: hsl(0, 0%, 8%);
+        color: hsl(0, 0%, 98%);
+        margin-bottom: 50px;
+        cursor: pointer;
+    }
+
+    #learn:active{
+        background-color: hsl(0, 0%, 98%);
+        color: hsl(0, 0%, 8%);
+        font-weight: bold;
+        transition: all .2s ease;
+    }
+
+    h1{
+        
+        font-size: 2.5rem;
+    }
+
+    
+    #companies{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 25px 20px 25px;
+    }
+
+    #companies .databiz{
+        height: 13px;
+        width: 60px;
+    }
+
+    #companies .audio{
+        height: 20px;
+        width: 45px;
+    }
+
+    #companies .meet{
+        height: 13px;
+        width: 60px
+    }
+
+    #companies .maker{
+        height: 20px;
+        width: 65px
+    }
+
+
+    p{
+        font-size: 1.2rem;
+        line-height: 34px;
+        margin-bottom: 30px;
+        text-align: center;
+        padding: 0 25px;
+        color: hsl(0, 0%, 36%);
+        margin-top: -8px;
+    }
+
+     .modal{
+        margin: 0;
+        padding-top: 1rem;
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 1920px;
+        background-color: hsl(0, 0%, 98%);
+        transition: all 0.5s ease-in-out;
+        width: 100%;
+        margin-top: -20px; 
+     }
+
+
+     .modal-hidden{
+         display: none;
+     }
+
+     .modal ul{
+        list-style-type: none;
+        cursor: pointer;
+        margin-top: 70px;
+        margin-left: -10px;
+    }
+    
+     .modal ul li{
+        padding: 10px 0;
+        font-size: 1rem;
+        color: hsl(0, 0%, 26%);
+    }
+
+    .modal ul li:hover{
+        transform: translateY(-2px);
+        transition: all .3s ease;
+    }
+
+    .modal ul li:active{
+        color: black;
+        font-weight: bold;
+    }
+
+    .modal a{
+        text-decoration: none;
+        color: hsl(0, 0%, 26%);
+    }
+
+    .modal a:hover{
+        transform: translateY(-2px);
+        transition: all .3s ease;
+    }
+
+    .modal a:active{
+        color: black;
+        font-weight: bold;
+    }
+
+    .modal .close{
+        height: 23px;
+        width: 25px;
+        float: right;
+        margin-top: 38px;
+        margin-right: 20px;
+        cursor: pointer;
+    }
+
+    .modal .down-arrow{
+        margin-left: 12px;
+        margin-top: -15px;
+    }
+
+    .modal .feature-drop{
+        margin-top: 17px;
+    }
+
+    .modal .feature-drop li img{
+        padding-right: 18px;
+        margin-bottom: -5px;
+    }
+
+    .modal .company-drop{
+        margin-top: 17px;
+    }
+
+    .feature-drop-hidden{
+        display: none;
+    }
+
+    .company-drop-hidden{
+        display: none;
+    }
+}
+
+@media(min-width: 481px) and (max-width: 640px){
+    
+    #navs{
+        display: none;
+    }
+
+    #right{
+        display: none;
+    }
+
+    #top-nav{
+        display: flex;
+        justify-content: space-between;
+        margin: 20px 20px 0 20px;
+    }
+
+    .logo{
+        height: 30px;
+        width: 85px;
+    }
+
+    .show-mobile{
+        height: 28px;
+        width: 35px; 
+    }
+
+    #container{
+        display: flex;
+        flex-direction:column;
+        text-align: center;
+    }
+
+    #hero-image{
+        order: -1;
+        margin-top: 30px;
+        margin-bottom: 5px;
+    }
+
+    .mobile-hero{
+        width: 80%;
+    }
+
+    .desktop-hero{
+        display: none;
+    }
+
+    .company{
+        display: none;
+    }
+
+    .features{
+        display: none;
+    }
+    
+    #learn{
+        padding: 15px 35px;
+        font-size: 1.3rem;
+        border-radius: 7px;
+        border: 1px solid hsl(0, 0%, 8%);
+        background-color: hsl(0, 0%, 8%);
+        color: hsl(0, 0%, 98%);
+        margin-bottom: 50px;
+        cursor: pointer;
+    }
+
+    #learn:active{
+        background-color: hsl(0, 0%, 98%);
+        color: hsl(0, 0%, 8%);
+        font-weight: bold;
+        transition: all .2s ease;
+    }
+
+    h1{
+        
+        font-size: 3.5rem;
+    }
+
+    
+    #companies{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 25px 20px 25px;
+    }
+
+    #companies .databiz{
+        height: 18px;
+        width: 90px;
+    }
+
+    #companies .audio{
+        height: 35px;
+        width: 70px;
+    }
+
+    #companies .meet{
+        height: 20px;
+        width: 80px
+    }
+
+    #companies .maker{
+        height: 25px;
+        width: 80px
+    }
+
+
+    p{
+        font-size: 1.5rem;
+        line-height: 40px;
+        margin-bottom: 35px;
+        text-align: center;
+        padding: 0 25px;
+        color: hsl(0, 0%, 36%);
+        margin-top: -10px;
+    }
+
+    .modal{
+        margin: 0;
+        padding-top: 1rem;
+        border-bottom: 1px black solid;
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 1920px;
+        background-color: hsl(0, 0%, 98%);
+        transition: all 0.5s ease-in-out;
+        width: 100%;
+        margin-top: -20px; 
+     }
+
+
+     .modal-hidden{
+         display: none;
+     }
+
+     .modal ul{
+        list-style-type: none;
+        cursor: pointer;
+        margin-top: 70px;
+        margin-left: -10px;
+    }
+    
+     .modal ul li{
+        padding: 13px 0;
+        font-size: 1.1rem;
+        color: hsl(0, 0%, 26%);
+    }
+
+    .modal ul li:hover{
+        transform: translateY(-2px);
+        transition: all .3s ease;
+    }
+
+    .modal ul li:active{
+        color: black;
+        font-weight: bold;
+    }
+
+    .modal a{
+        text-decoration: none;
+        color: hsl(0, 0%, 26%);
+    }
+
+    .modal a:hover{
+        transform: translateY(-2px);
+        transition: all .3s ease;
+    }
+
+    .modal a:active{
+        color: black;
+        font-weight: bold;
+    }
+
+    .modal .close{
+        height: 30px;
+        width: 35px; 
+        float: right;
+        margin-top: 38px;
+        margin-right: 20px;
+        cursor: pointer;
+    }
+
+    .modal .down-arrow{
+        margin-left: 12px;
+        margin-top: -15px;
+    }
+
+    .modal .feature-drop{
+        margin-top: 17px;
+    }
+
+    .modal .feature-drop li img{
+        padding-right: 18px;
+        margin-bottom: -5px;
+    }
+
+    .modal .company-drop{
+        margin-top: 17px;
+    }
+
+    .feature-drop-hidden{
+        display: none;
+    }
+
+    .company-drop-hidden{
+        display: none;
+    }
+}
+
+@media(min-width: 641px) and (max-width: 960px){
+    
+    #navs{
+        display: none;
+    }
+
+    #right{
+        display: none;
+    }
+
+    #top-nav{
+        display: flex;
+        justify-content: space-between;
+        margin: 20px 20px 0 20px;
+    }
+
+    .logo{
+        height: 35px;
+        width: 100px;
+    }
+
+    .show-mobile{
+        height: 30px;
+        width: 45px; 
+    }
+
+    #container{
+        display: flex;
+        flex-direction:column;
+        text-align: center;
+    }
+
+    #hero-image{
+        order: -1;
+        margin-top: 30px;
+        margin-bottom: 5px;
+    }
+
+    .mobile-hero{
+        width: 85%;
+    }
+
+    .desktop-hero{
+        display: none;
+    }
+
+    .company{
+        display: none;
+    }
+
+    .features{
+        display: none;
+    }
+    
+    #learn{
+        padding: 20px 40px;
+        font-size: 1.5rem;
+        border-radius: 7px;
+        border: 1px solid hsl(0, 0%, 8%);
+        background-color: hsl(0, 0%, 8%);
+        color: hsl(0, 0%, 98%);
+        margin-bottom: 50px;
+        cursor: pointer;
+    }
+
+    #learn:active{
+        background-color: hsl(0, 0%, 98%);
+        color: hsl(0, 0%, 8%);
+        font-weight: bold;
+        transition: all .2s ease;
+    }
+
+    h1{
+        
+        font-size: 3.5rem;
+    }
+
+    
+    #companies{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 25px 20px 25px;
+    }
+
+    #companies .databiz{
+        height: 20px;
+        width: 110px;
+    }
+
+    #companies .audio{
+        height: 40px;
+        width: 80px;
+    }
+
+    #companies .meet{
+        height: 23px;
+        width: 95px
+    }
+
+    #companies .maker{
+        height: 35px;
+        width: 110px
+    }
+
+
+    p{
+        font-size: 2.1rem;
+        line-height: 48px;
+        margin-bottom: 45px;
+        text-align: center;
+        padding: 0 25px;
+        color: hsl(0, 0%, 36%);
+        margin-top: -15px;
+    }
+
+     .modal{
+        margin: 0;
+        padding-top: 1rem;
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 1920px;
+        background-color: hsl(0, 0%, 98%);
+        transition: all 0.5s ease-in-out;
+        width: 100%;
+        margin-top: -20px; 
+     }
+
+
+     .modal-hidden{
+         display: none;
+     }
+
+     .modal ul{
+        list-style-type: none;
+        cursor: pointer;
+        margin-top: 70px;
+        margin-left: -10px;
+    }
+    
+     .modal ul li{
+        padding: 15px 0;
+        font-size: 1.5rem;
+        color: hsl(0, 0%, 26%);
+    }
+
+    .modal ul li:hover{
+        transform: translateY(-2px);
+        transition: all .3s ease;
+    }
+
+    .modal ul li:active{
+        color: black;
+        font-weight: bold;
+    }
+
+    .modal a{
+        text-decoration: none;
+        color: hsl(0, 0%, 26%);
+    }
+
+    .modal a:hover{
+        transform: translateY(-2px);
+        transition: all .3s ease;
+    }
+
+    .modal a:active{
+        color: black;
+        font-weight: bold;
+    }
+
+    .modal .close{
+        height: 35px;
+        width: 41px; 
+        float: right;
+        margin-top: 38px;
+        margin-right: 20px;
+        cursor: pointer;
+    }
+
+    .modal .down-arrow{
+        margin-left: 12px;
+        margin-top: -15px;
+    }
+
+    .modal .feature-drop{
+        margin-top: 17px;
+    }
+
+    .modal .feature-drop li img{
+        padding-right: 18px;
+        margin-bottom: -5px;
+    }
+
+    .modal .company-drop{
+        margin-top: 17px;
+    }
+
+    .feature-drop-hidden{
+        display: none;
+    }
+
+    .company-drop-hidden{
+        display: none;
+    }
+}
+
+
+@media(min-width: 961px) and (max-width: 1024px){
+   
+    a{
+        text-decoration: none;
+        color: hsl(0, 0%, 8%);
+    }
+
+    a:hover{
+        transform: translateY(-2px);
+        transition: all .3s ease;
+    }
+
+    .hide-desktop{
+        display: none;
+    }
+
+    a:active{
+        color: black;
+        font-weight: bold;
+    }
+
+    li:hover{
+        transform: translateY(-2px);
+        transition: all .3s ease;
+    }
+
+    li:active{
+        color: black;
+        font-weight: bold;
+    }
+
+    .down-arrow{
+        margin-left: 4px;
+        margin-top: -2px;
+    }
+
+    .features-up-arrow{
+        left: 187px;
+        top: 19px;
+        position: absolute;  
+    }
+
+    .company-up-arrow{
+        position: absolute;  
+        left: 347px;
+        top: 19px;
+    }
+
+    #top-nav{
+        display: flex;
+        justify-content: space-between;
+        margin: 10px 30px 0 30px;
+        position: relative;
+    }
+
+    .logo{
+        margin-top: 15px;
+    }
+
+    #navs{
+        list-style-type: none;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        margin-left: 13px;
+        cursor: pointer;
+    }
+
+    #left{
+        display: flex;
+        justify-content: space-between;
+        width: 50%;
+    }
+
+    #right{
+        display: flex;
+        justify-content: space-between;
+        padding-top: 2px;
+        width: 17%;
+        align-items: center;
+    }
+
+
+    .register{
+        padding: 7px 16px;
+        font-size: 1rem;
+        border-radius: 10px;
+        border: 1px solid black;
+        background-color: hsl(0, 0%, 98%);
+        margin-top: -1px;
+        cursor: pointer;
+    }
+
+    .register:active{
+        color: black;
+        font-weight: bold;
+        transition: all .3s ease;
+    }
+
+    #container{
+        width: 70%;
+        margin: 7rem auto 0;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #hero-section{
+        width: 40%;
+        margin-top: 5rem;
+        height: 500px;
+    }
+
+    .mobile-hero{
+        display: none;
+    }
+
+    .desktop-hero{
+        padding-left: 7rem;
+        width: 90%;
+        height: 75%;
+    }
+
+    h1{
+        font-size: 3.0rem;
+        letter-spacing: 1.5px;
+        margin-top: 2rem;
+        width: 21rem;
+    }
+
+    p{
+        font-size: 0.8rem;
+        line-height: 17px;
+        padding-right: 40px;
+        margin-top: -10px;
+        margin-bottom: 35px;
+        color: hsl(0, 0%, 36%);
+        width: 20rem;
+    }
+
+    #learn{
+        padding: 15px 30px;
+        font-size: 1rem;
+        border-radius: 9px;
+        border: 1px solid hsl(0, 0%, 8%);
+        background-color: hsl(0, 0%, 8%);
+        color: hsl(0, 0%, 98%);
+        margin-bottom: 2.7rem;
+        cursor: pointer;
+    }
+
+    #learn:active{
+        background-color: hsl(0, 0%, 98%);
+        color: hsl(0, 0%, 8%);
+        font-weight: bold;
+        transition: all .2s ease;
+    }
+
+    #companies{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 20rem;
+    }
+
+    #companies .databiz{
+        height: 10px;
+        width: 65px;
+    }
+
+    #companies .audio{
+        height: 20px;
+        width: 40px;
+    }
+
+    #companies .meet{
+        height: 15px;
+        width: 70px
+    }
+
+    #companies .maker{
+        height: 20px;
+        width: 90px
+    }
+
+    .features{
+        width: 15%;
+        margin-left: 20px;
+        position: absolute;
+        top: 60px;
+        left: 55px;
+        border-radius: 10px;
+        background-color: hsl(0, 0%, 98%);
+        box-shadow: 0px 5px 50px rgba(0, 0, 0, 0.116);
+        transition: all 5s ease-in-out;
+    }
+
+    .features-hidden{
+        display: none;
+    }
+
+
+    .features ul{
+        list-style-type: none;
+        cursor: pointer;
+    }
+
+    .features ul li{
+        padding: 8px 0;
+        margin-right: 20px;
+        margin-left: -17px;
+        display: flex;
+        align-items: center;
+        font-size: 0.9rem;
+        color: hsl(0, 0%, 8%);;
+    }
+
+    .features ul li img{
+        padding-right: 15px;
+        margin-top: -5px;
+    }
+
+    .company{
+        width: 12%;
+        margin-left: 20px;
+        position: absolute;
+        top: 60px;
+        left: 225px;
+        border-radius: 10px;
+        background-color: hsl(0, 0%, 98%);
+        box-shadow: 0px 5px 50px rgba(0, 0, 0, 0.116);
+        transition: all 5s ease-in-out;
+    }
+
+    .company-hidden{
+        display: none;
+    }
+
+    .company ul{
+        list-style-type: none;
+        cursor: pointer;
+    }
+
+    .company ul li{
+        padding: 8px 0;
+        margin-right: 20px;
+        margin-left: -12px;
+        display: flex;
+        align-items: center;
+        font-size: 0.9rem;
+        color: hsl(0, 0%, 8%);;
+    }
+
+    .modal{
+        display: none;
+    }
+}
+
+@media(min-width: 1025px) and (max-width: 1281px){
+   
+    a{
+        text-decoration: none;
+        color: hsl(0, 0%, 8%);
+    }
+    
+    a:hover{
+        transform: translateY(-2px);
+        transition: all .3s ease;
+    }
+    
+    .hide-desktop{
+        display: none;
+    }
+    
+    a:active{
+        color: black;
+        font-weight: bold;
+    }
+    
+    li:hover{
+        transform: translateY(-2px);
+        transition: all .3s ease;
+    }
+    
+    li:active{
+        color: black;
+        font-weight: bold;
+    }
+    
+    .down-arrow{
+        margin-left: 4px;
+        margin-top: -2px;
+    }
+    
+    .features-up-arrow{
+        left: 187px;
+        top: 19px;
+        position: absolute;  
+    }
+    
+    .company-up-arrow{
+        position: absolute;  
+        left: 347px;
+        top: 19px;
+    }
+    
+    #top-nav{
+        display: flex;
+        justify-content: space-between;
+        margin: 10px 30px 0 30px;
+        position: relative;
+    }
+    
+    .logo{
+        margin-top: 15px;
+    }
+    
+    #navs{
+        list-style-type: none;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        margin-left: -5px;
+        cursor: pointer;
+    }
+    
+    #left{
+        display: flex;
+        justify-content: space-between;
+        width: 50%;
+    }
+    
+    #right{
+        display: flex;
+        justify-content: space-between;
+        padding-top: 2px;
+        width: 17%;
+        align-items: center;
+    }
+    
+    
+    .register{
+        padding: 7px 16px;
+        font-size: 1rem;
+        border-radius: 10px;
+        border: 1px solid black;
+        background-color: hsl(0, 0%, 98%);
+        margin-top: -1px;
+        cursor: pointer;
+    }
+    
+    .register:active{
+        color: black;
+        font-weight: bold;
+        transition: all .3s ease;
+    }
+    
+    #container{
+        width: 75%;
+        margin: 7rem auto 0;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    #hero-section{
+        width: 40%;
+        margin-top: 5rem;
+        height: 500px;
+    }
+    
+    .mobile-hero{
+        display: none;
+    }
+    
+    .desktop-hero{
+        padding-left: 7rem;
+        width: 85%;
+        height: 80%;
+    }
+    
+    h1{
+        font-size: 3.3rem;
+        letter-spacing: 1.5px;
+        margin-top: 2rem;
+        width: 23rem;
+    }
+    
+    p{
+        font-size: 0.8rem;
+        line-height: 17px;
+        padding-right: 40px;
+        margin-top: -10px;
+        margin-bottom: 35px;
+        color: hsl(0, 0%, 36%);
+        width: 20rem;
+    }
+    
+    #learn{
+        padding: 15px 30px;
+        font-size: 1rem;
+        border-radius: 9px;
+        border: 1px solid hsl(0, 0%, 8%);
+        background-color: hsl(0, 0%, 8%);
+        color: hsl(0, 0%, 98%);
+        margin-bottom: 52px;
+        cursor: pointer;
+    }
+    
+    #learn:active{
+        background-color: hsl(0, 0%, 98%);
+        color: hsl(0, 0%, 8%);
+        font-weight: bold;
+        transition: all .2s ease;
+    }
+    
+    #companies{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 20rem;
+    }
+    
+    #companies .databiz{
+        height: 10px;
+        width: 65px;
+    }
+    
+    #companies .audio{
+        height: 20px;
+        width: 40px;
+    }
+    
+    #companies .meet{
+        height: 15px;
+        width: 70px
+    }
+    
+    #companies .maker{
+        height: 20px;
+        width: 90px
+    }
+    
+    .features{
+        width: 15%;
+        margin-left: 20px;
+        position: absolute;
+        top: 60px;
+        left: 40px;
+        border-radius: 10px;
+        background-color: hsl(0, 0%, 98%);
+        box-shadow: 0px 5px 50px rgba(0, 0, 0, 0.116);
+        transition: all 5s ease-in-out;
+    }
+    
+    .features-hidden{
+        display: none;
+    }
+    
+    .features ul{
+        list-style-type: none;
+        cursor: pointer;
+    }
+    
+    .features ul li{
+        padding: 8px 0;
+        margin-right: 20px;
+        margin-left: -17px;
+        display: flex;
+        align-items: center;
+        font-size: 0.9rem;
+        color: hsl(0, 0%, 8%);;
+    }
+    
+    .features ul li img{
+        padding-right: 15px;
+        margin-top: -5px;
+    }
+    
+    .company{
+        width: 12%;
+        margin-left: 20px;
+        position: absolute;
+        top: 60px;
+        left: 225px;
+        border-radius: 10px;
+        background-color: hsl(0, 0%, 98%);
+        box-shadow: 0px 5px 50px rgba(0, 0, 0, 0.116);
+        transition: all 5s ease-in-out;
+    }
+    
+    .company-hidden{
+        display: none;
+    }
+    
+    .company ul{
+        list-style-type: none;
+        cursor: pointer;
+    }
+    
+    .company ul li{
+        padding: 8px 0;
+        margin-right: 20px;
+        margin-left: -12px;
+        display: flex;
+        align-items: center;
+        font-size: 0.9rem;
+        color: hsl(0, 0%, 8%);;
+    }
+    
+    .modal{
+        display: none;
+    }
+}
+
+@media(min-width: 1281px){
+
+    a{
+        text-decoration: none;
+        color: hsl(0, 0%, 8%);
+    }
+
+    a:hover{
+        transform: translateY(-2px);
+        transition: all .3s ease;
+    }
+
+    .hide-desktop{
+        display: none;
+    }
+
+    a:active{
+        color: black;
+        font-weight: bold;
+    }
+
+    li:hover{
+        transform: translateY(-2px);
+        transition: all .3s ease;
+    }
+
+    li:active{
+        color: black;
+        font-weight: bold;
+    }
+
+    .down-arrow{
+        margin-left: 4px;
+        margin-top: -2px;
+    }
+
+    .features-up-arrow{
+        left: 187px;
+        top: 19px;
+        position: absolute;  
+    }
+
+    .company-up-arrow{
+        position: absolute;  
+        left: 347px;
+        top: 19px;
+    }
+
+    #top-nav{
+        display: flex;
+        justify-content: space-between;
+        margin: 10px 30px 0 30px;
+        position: relative;
+    }
+
+    .logo{
+        margin-top: 15px;
+    }
+
+    #navs{
+        list-style-type: none;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        margin-left: 13px;
+        cursor: pointer; 
+    }
+
+    #left{
+        display: flex;
+        justify-content: space-between;
+        width: 40%;
+    }
+
+    #right{
+        display: flex;
+        justify-content: space-between;
+        padding-top: 2px;
+        width: 15%;
+        align-items: center;
+    }
+
+
+    .register{
+        padding: 7px 16px;
+        font-size: 1rem;
+        border-radius: 12px;
+        border: 1px solid black;
+        background-color: hsl(0, 0%, 98%);
+        margin-top: -1px;
+        cursor: pointer;
+    }
+
+    .register:active{
+        color: black;
+        font-weight: bold;
+        transition: all .3s ease;
+    }
+
+    #container{
+        width: 82%;
+        margin: 7rem auto 0;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #hero-section{
+        width: 60%;
+        margin-top: 5rem;
+        height: 500px;
+    }
+
+    .mobile-hero{
+        display: none;
+    }
+
+    .desktop-hero{
+        padding-left: 14rem;
+        width: 70%;
+        height: 80%;
+    }
+
+    h1{
+        font-size: 3.8rem;
+        letter-spacing: 2px;
+        margin-top: 3rem;
+        width: 27rem;
+    }
+
+    p{
+        font-size: 1rem;
+        line-height: 25px;
+        padding-right: 40px;
+        margin-top: -25px;
+        margin-bottom: 50px;
+        color: hsl(0, 0%, 36%);
+        width: 25rem;
+    }
+
+    #learn{
+        padding: 15px 30px;
+        font-size: 1rem;
+        border-radius: 9px;
+        border: 1px solid hsl(0, 0%, 8%);
+        background-color: hsl(0, 0%, 8%);
+        color: hsl(0, 0%, 98%);
+        margin-bottom: 4.2rem;
+        cursor: pointer;
+    }
+
+    #learn:active{
+        background-color: hsl(0, 0%, 98%);
+        color: hsl(0, 0%, 8%);
+        font-weight: bold;
+        transition: all .2s ease;
+    }
+
+    #companies{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .features{
+        width: 10%;
+        margin-left: 20px;
+        position: absolute;
+        top: 60px;
+        left: 50px;
+        border-radius: 10px;
+        background-color: hsl(0, 0%, 98%);
+        box-shadow: 0px 5px 50px rgba(0, 0, 0, 0.116);
+        transition: all 5s ease-in-out;
+    }
+
+    .features-hidden{
+        display: none;
+    }
+
+
+    .features ul{
+        list-style-type: none;
+        cursor: pointer;
+    }
+
+    .features ul li{
+        padding: 8px 0;
+        margin-right: 20px;
+        margin-left: -17px;
+        display: flex;
+        align-items: center;
+        font-size: 0.9rem;
+        color: hsl(0, 0%, 8%);;
+    }
+
+    .features ul li img{
+        padding-right: 15px;
+        margin-top: -5px;
+    }
+
+    .company{
+        width: 8%;
+        margin-left: 20px;
+        position: absolute;
+        top: 60px;
+        left: 280px;
+        border-radius: 10px;
+        background-color: hsl(0, 0%, 98%);
+        box-shadow: 0px 5px 50px rgba(0, 0, 0, 0.116);
+        transition: all 5s ease-in-out;
+    }
+
+    .company-hidden{
+        display: none;
+    }
+
+    .company ul{
+        list-style-type: none;
+        cursor: pointer;
+    }
+
+    .company ul li{
+        padding: 8px 0;
+        margin-right: 20px;
+        margin-left: -12px;
+        display: flex;
+        align-items: center;
+        font-size: 0.9rem;
+        color: hsl(0, 0%, 8%);;
+    }
+
+    .modal{
+        display: none;
+    }
+
+}

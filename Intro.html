@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intro Section</title>
+     <link rel="stylesheet" href="Intro.css">
+    <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap" rel="stylesheet">
+</head>
+<body class="opacity-modal">
+    <header id="top-nav">
+           <div id="left">
+               <img class="logo" width="70px" height="20px" src="images/logo.svg" alt="">
+               <ul id="navs">
+                  <li id="features-down">
+                      Features 
+                        <img class="down-arrow" src="images/icon-arrow-down.svg" alt="">
+                 </li>
+                 <li id="company-down">
+                      Company
+                       <img class="down-arrow" src="images/icon-arrow-down.svg" alt="">
+                 </li>
+                  <li><a href="#careers">Careers</a></li>
+                  <li><a href="#about">About</a></li>
+               </ul>
+            </div>
+            
+
+            <img height="30px" width="50px" class="hide-desktop show-mobile" src="images/icon-menu.svg" alt="">
+            <div id="right">
+                <a href="#login">Login</a>
+                <button class="register">Register</button>
+            </div>
+    </header>
+    <section id="container">
+        <section id="hero-section">
+            <h1>Make remote work</h1>
+            <p>Get your team in sync, no matter your location. Streamline processes, create team rituals, and watch productivity soar.</p>
+            <button id="learn">Learn More</button>
+            <div id="companies">
+                <img class="databiz" height="20px" width="110px" src="images/client-databiz.svg" alt="">
+                <img class="audio" height="30px" width="70px" src="images/client-audiophile.svg" alt="">
+                <img class="meet" src="images/client-meet.svg" alt="">
+                <img class="maker" src="images/client-maker.svg" alt="">
+            </div>
+        </section>
+
+        <section id="hero-image">
+            <img class="desktop-hero" src="images/image-hero-desktop.png" alt="">
+            <img class="mobile-hero" src="images/image-hero-mobile.png" alt="">
+        </section>
+    </section>
+
+    <div class="features features-hidden">
+        <ul>
+            <li><img src="images/icon-todo.svg" alt="">Todo List</li>
+            <li><img src="images/icon-calendar.svg" alt="">Calendar</li>
+            <li><img src="images/icon-reminders.svg" alt="">Reminders</li>
+            <li><img src="images/icon-planning.svg" alt="">Planning</li>
+        </ul>
+    </div>
+
+    <div class="company company-hidden">
+        <ul>
+            <li>History</li>
+            <li>Our Team</li>
+            <li>Blog</li>
+        </ul>
+    </div>
+    
+    <div class="modal modal-hidden">
+            <img height="35px" width="40px" class="close" src="images/icon-close-menu.svg" alt="">
+            <ul id="modal">
+              <li id="modal-features">
+                Features 
+                <img class="down-arrow" src="images/icon-arrow-down.svg" alt="">
+                    <ul class="feature-drop feature-drop-hidden">
+                        <li><img width="25px" height="25px" src="images/icon-todo.svg" alt="">Todo List</li>
+                        <li><img width="25px" height="25px" src="images/icon-calendar.svg" alt="">Calendar</li>
+                        <li><img width="25px" height="25px" src="images/icon-reminders.svg" alt="">Reminders</li>
+                        <li><img width="25px" height="25px" src="images/icon-planning.svg" alt="">Planning</li>
+                    </ul>
+              </li>
+
+              <li id="modal-company">
+                Company
+                 <img class="down-arrow" src="images/icon-arrow-down.svg" alt="">
+                 <ul class="company-drop company-drop-hidden">
+                    <li>History</li>
+                    <li>Our Team</li>
+                    <li>Blog</li>
+                </ul>
+              </li>
+
+              <li><a href="#careers">Careers</a></li>
+              <li><a href="#about">About</a></li>
+           </ul>
+    </div>
+
+    <script src="intro.js"></script>
+</body>
+</html>
